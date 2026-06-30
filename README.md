@@ -209,12 +209,6 @@ Software Engineering student passionate about building practical, real-world sof
 
 ## &nbsp;GitHub Analytics
 
-<div align="center">
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img src="https://github-readme-stats.vercel.app/api?username=quangnhathung&theme=tokyonight&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&rank_icon=percentile&ring_color=7dcfff" alt="GitHub Stats">
-  </a>
-</div>
-
 <h4 align="center">📊 Language Breakdown</h4>
 
 <div align="center">
@@ -223,26 +217,20 @@ Software Engineering student passionate about building practical, real-world sof
     <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=quangnhathung&theme=tokyonight" alt="Most Commit Language">
   </a>
 </div>
+<p></p>
 
 <div align="center">
   <a href="https://git.io/streak-stats">
     <img src="https://streak-stats.demolab.com?user=quangnhathung&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="GitHub Streak">
   </a>
 </div>
+<p></p>
 
 <div align="center">
   <a href="https://github.com/ashutosh00710/github-readme-activity-graph">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=quangnhathung&theme=tokyonight&hide_border=true&custom_title=Contribution%20Activity&radius=8&area=true" alt="GitHub Activity Graph" width="100%">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=quangnhathung&theme=dracula&hide_border=true&custom_title=Contribution%20Activity&radius=8&area=true" alt="GitHub Activity Graph" width="100%">
   </a>
 </div>
-
-<div align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=quangnhathung&theme=tokyonight&no-frame=true&margin-w=15&margin-h=15&column=7" alt="GitHub Trophy">
-  </a>
-</div>
-
----
 
 ## &nbsp;Let's Connect
 
