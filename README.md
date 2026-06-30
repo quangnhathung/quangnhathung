@@ -24,7 +24,11 @@ Software Engineering student passionate about building practical, real-world sof
 
 🐧 <b>OS:</b> <a href="https://archlinux.org"><img src="https://img.shields.io/badge/Arch_Linux-1793D1?style=flat-square&logo=arch-linux&logoColor=white" alt="Arch Linux"></a> &nbsp;·&nbsp; 🪟 <b>WM:</b> bspwm
 
-## ![Banner](assets/arch.jpeg)
+<div align="center">
+  <img src="assets/arch.jpeg" alt="Banner">
+</div>
+
+---
 
 ## &nbsp;Tech Stack
 
@@ -164,48 +168,50 @@ Software Engineering student passionate about building practical, real-world sof
   </tr>
 </table>
 
-<h4>📐 <b>Code Philosophy</b></h4>
+<div align="center">
+  <h4>📐 <b>Code Philosophy</b></h4>
 
-<img src="https://img.shields.io/badge/Clean_Code-7dcfff?style=flat-square&logo=clean-code&logoColor=black" alt="Clean Code">
-<img src="https://img.shields.io/badge/Readability_First-9ece6a?style=flat-square&logo=read-the-docs&logoColor=black" alt="Readability First">
-<img src="https://img.shields.io/badge/SOLID-bb9af7?style=flat-square&logo=google-cloud&logoColor=black" alt="SOLID">
-<img src="https://img.shields.io/badge/DRY-e0af68?style=flat-square&logo=react&logoColor=black" alt="DRY">
-<img src="https://img.shields.io/badge/KISS-f7768e?style=flat-square&logo=simpleicons&logoColor=white" alt="KISS">
-<img src="https://img.shields.io/badge/Modular_Design-7dcfff?style=flat-square&logo=react&logoColor=black" alt="Modular Design">
-<img src="https://img.shields.io/badge/Strong_Typing-9ece6a?style=flat-square&logo=typescript&logoColor=black" alt="Strong Typing">
-<img src="https://img.shields.io/badge/Explicit_Error_Handling-e0af68?style=flat-square&logo=go&logoColor=black" alt="Explicit Error Handling">
-<img src="https://img.shields.io/badge/Layered_Architecture-bb9af7?style=flat-square&logo=google-cloud&logoColor=black" alt="Layered Architecture">
+  <img src="https://img.shields.io/badge/Clean_Code-7dcfff?style=flat-square&logo=clean-code&logoColor=black" alt="Clean Code">
+  <img src="https://img.shields.io/badge/Readability_First-9ece6a?style=flat-square&logo=read-the-docs&logoColor=black" alt="Readability First">
+  <img src="https://img.shields.io/badge/SOLID-bb9af7?style=flat-square&logo=google-cloud&logoColor=black" alt="SOLID">
+  <img src="https://img.shields.io/badge/DRY-e0af68?style=flat-square&logo=react&logoColor=black" alt="DRY">
+  <img src="https://img.shields.io/badge/KISS-f7768e?style=flat-square&logo=simpleicons&logoColor=white" alt="KISS">
+  <img src="https://img.shields.io/badge/Modular_Design-7dcfff?style=flat-square&logo=react&logoColor=black" alt="Modular Design">
+  <img src="https://img.shields.io/badge/Strong_Typing-9ece6a?style=flat-square&logo=typescript&logoColor=black" alt="Strong Typing">
+  <img src="https://img.shields.io/badge/Explicit_Error_Handling-e0af68?style=flat-square&logo=go&logoColor=black" alt="Explicit Error Handling">
+  <img src="https://img.shields.io/badge/Layered_Architecture-bb9af7?style=flat-square&logo=google-cloud&logoColor=black" alt="Layered Architecture">
 
-<h4>🔀 <b>Git Workflow</b></h4>
+  <h4>🔀 <b>Git Workflow</b></h4>
 
-<img src="https://img.shields.io/badge/Feature_Branch-7dcfff?style=flat-square&logo=git&logoColor=black" alt="Feature Branch">
-<img src="https://img.shields.io/badge/Pull_Request-9ece6a?style=flat-square&logo=github&logoColor=black" alt="Pull Request">
-<img src="https://img.shields.io/badge/Conventional_Commits-bb9af7?style=flat-square&logo=git&logoColor=black" alt="Conventional Commits">
-<img src="https://img.shields.io/badge/Small_Commits-e0af68?style=flat-square&logo=git&logoColor=black" alt="Small Commits">
-<img src="https://img.shields.io/badge/Code_Review-f7768e?style=flat-square&logo=code-review&logoColor=white" alt="Code Review">
-<img src="https://img.shields.io/badge/Squash_Merge-7dcfff?style=flat-square&logo=git-lfs&logoColor=black" alt="Squash Merge">
+  <img src="https://img.shields.io/badge/Feature_Branch-7dcfff?style=flat-square&logo=git&logoColor=black" alt="Feature Branch">
+  <img src="https://img.shields.io/badge/Pull_Request-9ece6a?style=flat-square&logo=github&logoColor=black" alt="Pull Request">
+  <img src="https://img.shields.io/badge/Conventional_Commits-bb9af7?style=flat-square&logo=git&logoColor=black" alt="Conventional Commits">
+  <img src="https://img.shields.io/badge/Small_Commits-e0af68?style=flat-square&logo=git&logoColor=black" alt="Small Commits">
+  <img src="https://img.shields.io/badge/Code_Review-f7768e?style=flat-square&logo=code-review&logoColor=white" alt="Code Review">
+  <img src="https://img.shields.io/badge/Squash_Merge-7dcfff?style=flat-square&logo=git-lfs&logoColor=black" alt="Squash Merge">
 
-<h4>🎯 <b>Engineering Philosophy</b></h4>
+  <h4>🎯 <b>Engineering Philosophy</b></h4>
 
-<blockquote>
-  <i>Build maintainable software. Prioritize readability. Write code for humans first, machines second. Optimize for simplicity over cleverness. Performance when it matters. Continuous learning always.</i>
-  <br><br>
-  <sub><b>Principles:</b> Clean Architecture · explicit error handling · strong typing · modular design · meaningful naming · consistent patterns · tested behavior</sub>
-</blockquote>
+  <blockquote>
+    <i>Build maintainable software. Prioritize readability. Write code for humans first, machines second. Optimize for simplicity over cleverness. Performance when it matters. Continuous learning always.</i>
+    <br><br>
+    <sub><b>Principles:</b> Clean Architecture · explicit error handling · strong typing · modular design · meaningful naming · consistent patterns · tested behavior</sub>
+  </blockquote>
 
-<h4>🛠️ <b>Productivity Tools</b></h4>
+  <h4>🛠️ <b>Productivity Tools</b></h4>
 
-<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub">
-<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
-<img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white" alt="Postman">
-<img src="https://img.shields.io/badge/DBeaver-382923?style=flat-square&logo=dbeaver&logoColor=white" alt="DBeaver">
-<img src="https://img.shields.io/badge/TablePlus-00B4B4?style=flat-square&logo=tableplus&logoColor=white" alt="TablePlus">
-<img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" alt="Figma">
-<img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white" alt="Notion">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
+  <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white" alt="Postman">
+  <img src="https://img.shields.io/badge/DBeaver-382923?style=flat-square&logo=dbeaver&logoColor=white" alt="DBeaver">
+  <img src="https://img.shields.io/badge/TablePlus-00B4B4?style=flat-square&logo=tableplus&logoColor=white" alt="TablePlus">
+  <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" alt="Figma">
+  <img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white" alt="Notion">
 
-<h4>💻 <b>Terminal</b></h4>
+  <h4>💻 <b>Terminal</b></h4>
 
-![Banner](assets/fastfetch.png)
+  <img src="assets/fastfetch.png" alt="Banner">
+</div>
 
 ---
 
@@ -219,20 +225,20 @@ Software Engineering student passionate about building practical, real-world sof
     <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=quangnhathung&theme=tokyonight" alt="Most Commit Language">
   </a>
 </div>
-<p></p>
 
 <div align="center">
   <a href="https://git.io/streak-stats">
     <img src="https://streak-stats.demolab.com?user=quangnhathung&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="GitHub Streak">
   </a>
 </div>
-<p></p>
 
 <div align="center">
   <a href="https://github.com/ashutosh00710/github-readme-activity-graph">
     <img src="https://github-readme-activity-graph.vercel.app/graph?username=quangnhathung&theme=dracula&hide_border=true&custom_title=Contribution%20Activity&radius=8&area=true" alt="GitHub Activity Graph" width="100%">
   </a>
 </div>
+
+---
 
 ## &nbsp;Let's Connect
 
@@ -257,6 +263,8 @@ Software Engineering student passionate about building practical, real-world sof
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/quangnhathung/quangnhathung/output/github-contribution-grid-snake.svg">
   <img alt="GitHub contribution grid snake animation showing a snake eating contributions" src="https://raw.githubusercontent.com/quangnhathung/quangnhathung/output/github-contribution-grid-snake.svg">
 </picture>
+
+---
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2&height=120&section=footer&animation=fadeIn">
