@@ -211,8 +211,16 @@ Software Engineering student passionate about building practical, real-world sof
 
 <div align="center">
   <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=quangnhathung&theme=tokyonight&show_icons=true&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=quangnhathung&theme=tokyonight&hide_border=true&layout=compact&langs_count=8" alt="Top Languages">
+    <img src="https://github-readme-stats.vercel.app/api?username=quangnhathung&theme=tokyonight&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&rank_icon=percentile&ring_color=7dcfff" alt="GitHub Stats">
+  </a>
+</div>
+
+<h4 align="center">📊 Language Breakdown</h4>
+
+<div align="center">
+  <a href="https://github.com/vn7n24fzkq/github-profile-summary-cards">
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=quangnhathung&theme=tokyonight" alt="Repos per Language">
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=quangnhathung&theme=tokyonight" alt="Most Commit Language">
   </a>
 </div>
 
