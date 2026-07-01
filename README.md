@@ -6,7 +6,7 @@
 
 <div align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=7DCFFF&center=true&vCenter=true&width=600&lines=Hi+%F0%9F%91%8B%2C+I'm+Quang+Nhat+Hung;Fullstack+Developer+%7C+Software+Engineering+Student;Building+practical+software+solutions;Always+learning+%26+exploring+new+technologies" alt="Typing SVG with rotating taglines">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=7DCFFF&center=true&vCenter=true&width=600&lines=Hi+%F0%9F%91%8B%2C+I'm+Quang+Nhat+Hung;Fullstack+Developer+%7C+Software+Engineer;Building+practical+software+solutions;Always+learning+%26+exploring+new+technologies" alt="Typing SVG with rotating taglines">
   </a>
 </div>
 
@@ -18,7 +18,7 @@
 
 ## &nbsp;About Me
 
-Software Engineering student passionate about building practical, real-world software solutions. I combine strong fundamentals in full-stack development with a continuous drive to learn — from distributed systems to cloud-native architecture. Eager to contribute to professional teams and grow as an engineer.
+Software Engineer passionate about building practical, real-world software solutions. I combine strong fundamentals in full-stack development with a continuous drive to learn — from distributed systems to cloud-native architecture. Eager to contribute to professional teams and grow as an engineer.
 
 📍 Ho Chi Minh City, Vietnam &nbsp;·&nbsp; ✉️ quangnhathung2005@gmail.com
 
