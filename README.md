@@ -24,9 +24,9 @@ Software Engineer passionate about building practical, real-world software solut
 
 🐧 <b>OS:</b> <a href="https://archlinux.org"><img src="https://img.shields.io/badge/Arch_Linux-1793D1?style=flat-square&logo=arch-linux&logoColor=white" alt="Arch Linux"></a> &nbsp;·&nbsp; 🪟 <b>WM:</b> bspwm
 
-<div align="center">
+<!-- <div align="center">
   <img src="assets/arch.jpeg" alt="Banner">
-</div>
+</div> -->
 
 ---
 
