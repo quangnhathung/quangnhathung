@@ -22,14 +22,6 @@
 │  stack development, ongoing interest in distributed        │
 │  systems and cloud-native architecture.                    │
 │                                                            │
-└────────────────────────────────────────────────────────────┘
-  </pre>
-</div>
-
-<div align="center">
-  <pre style="background:#121212;color:#cdd6f4;font-family:'Fira Code',monospace;padding:20px;border-radius:8px;border:1px solid #45475a;text-align:left;display:inline-block;">
-┌────────────────────────────────────────────────────────────┐
-│                                                            │
 │  <span style="color:#a6e3a1">➜</span> <span style="color:#89b4fa">cat</span> tech_stack.txt                                      │
 │                                                            │
 │  <span style="color:#f38ba8">FRONTEND</span>          React · TypeScript · Tailwind CSS       │
@@ -46,19 +38,8 @@
 │  Building real-world full-stack applications with          │
 │  .NET + React.                                             │
 │                                                            │
-└────────────────────────────────────────────────────────────┘
-  </pre>
-</div>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=quangnhathung&theme=dark&hide_border=true" alt="GitHub Streak" />
-</p>
-
-<div align="center">
-  <pre style="background:#121212;color:#cdd6f4;font-family:'Fira Code',monospace;padding:20px;border-radius:8px;border:1px solid #45475a;text-align:left;display:inline-block;">
-┌────────────────────────────────────────────────────────────┐
 │                                                            │
-│  <span style="color:#a6e3a1">➜ </span> <span style="color:#89b4fa">cat</span> connect.txt                                        │
+│  <span style="color:#a6e3a1">➜</span> <span style="color:#89b4fa">cat</span> connect.txt                                        │
 │                                                            │
 │  <span style="color:#f38ba8">email</span>    quangnhathung2005@gmail.com                      │
 │  <span style="color:#f38ba8">github</span>   https://github.com/quangnhathung                 │
@@ -66,4 +47,8 @@
 │                                                            │
 └────────────────────────────────────────────────────────────┘
   </pre>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=quangnhathung&theme=dark&hide_border=true" alt="GitHub Streak" />
+</p>
 </div>
