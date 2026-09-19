@@ -1,19 +1,11 @@
 # Kỷ nguyên Dữ liệu Dòng (Streaming Data)
 
-**1. Mở đầu:** "Kính chào Thầy và các bạn. Để bắt đầu, chúng ta hãy nhìn vào thực tế của các hệ thống phần mềm hiện đại: Chúng ta đã chính thức bước vào 'Kỷ nguyên Dữ liệu Dòng' hay còn gọi là Streaming Data. Trong kỷ nguyên này, các kiến trúc lưu trữ cũ đang bị đánh gục bởi 4 thách thức cốt lõi trên màn hình."
+Kính chào Thầy và các bạn. Để bắt đầu, chúng ta hãy nhìn vào thực tế của các hệ thống phần mềm hiện đại: Chúng ta đã chính thức bước vào 'Kỷ nguyên Dữ liệu Dòng' hay còn gọi là Streaming Data. Trong kỷ nguyên này, các kiến trúc lưu trữ cũ đang bị đánh gục bởi 4 thách thức cốt lõi trên màn hình."
 
 **2. Đi vào trọng tâm (Phân tích 4 keywords trên slide):**
 
 - **Về Vận tốc và Nguồn phát:** "Thứ nhất, hệ thống hiện tại phải đối mặt với **vận tốc cực cao**, nơi dữ liệu phát sinh liên tục không dừng ở mọi mili-giây. Luồng dữ liệu khổng lồ này không chỉ đến từ một nguồn mà có **nguồn phát rất đa dạng**: từ thao tác click chuột trên Web, Mobile, hàng triệu thiết bị cảm biến IoT, cho đến Logs hệ thống và hàng nghìn tiến trình Microservices đan chéo nhau."
-- **Về Giá trị và Thời gian :** "Tuy nhiên, thách thức sống còn nhất nằm ở **sự suy giảm giá trị**. Trong Streaming Data, giá trị thông tin giảm mạnh theo thời gian tính từ thời điểm sự kiện phát sinh. Ví dụ: một giao dịch quẹt thẻ nghi ngờ gian lận, hoặc một cuốc xe công nghệ cần định giá. Nếu chúng ta phát hiện và tính toán sau 1 giờ đồng hồ thì thông tin đó không còn ý nghĩa kinh doanh. Điều này ép buộc các hệ thống ngày nay phải có năng lực **xử lý tức thì**, bắt buộc phản hồi gần thời gian thực."
-
-**3. Đào sâu chuyên môn (Dành cho bạn thể hiện tư duy kỹ trúc sư):**
-
-"Có thể thấy được, lượng dữ liệu khổng lồ ngày nay với hạ tầng của chúng ta nêu không có khả năng xử lý, toàn bộ server sẽ bị trào bộ nhớ và sụp đổ dây chuyền."
-
-**4. Chuyển ý sang Slide 3:**
-
-"Đó chính là sự dịch chuyển từ Batch Processing sang Stream Processing"
+- **Về Giá trị và Thời gian :** "thách thức sống còn nhất nằm ở **sự suy giảm giá trị**. Trong Streaming Data, giá trị thông tin giảm mạnh theo thời gian tính từ thời điểm sự kiện phát sinh. Ví dụ: một giao dịch quẹt thẻ nghi ngờ gian lận, hoặc một cuốc xe công nghệ cần định giá. Nếu chúng ta phát hiện và tính toán sau 1 giờ thì thông tin đó không còn ý nghĩa kinh doanh. Điều này ép buộc các hệ thống ngày nay phải có năng lực **xử lý tức thì**, bắt buộc phản hồi thời gian thực."
 
 **💡 Mẹo phản biện cho bạn:** Nếu hội đồng hỏi _"Tại sao lại có IoT và Microservices ở đây?"_, hãy trả lời thẳng thắn: \_"Dạ thưa thầy, kiến trúc Monolithic (nguyên khối) ngày xưa chỉ có 1 cục server giao tiếp với 1 database. Hiện nay, khi microservices bùng nổ, hàng chục service nhỏ gọi nhau liên tục sinh ra lượng event khổng lồ. Cộng thêm dữ liệu telemetry (đo lường) từ các thiết bị IoT bắn về mỗi giây, hệ thống Message Queue truyền thống như RabbitMQ đã không thể chịu nổi tải. Đó là bối cảnh ép buộc Apache Kafka phải ra đời."
 
@@ -25,7 +17,7 @@
 
 "Nhìn lên bảng đối chiếu, chúng ta có thể thấy hai triết lý thiết kế này khác biệt hoàn toàn về bản chất:
 
-- **Về bản chất dữ liệu:** Batch Processing giả định dữ liệu là hữu hạn và tĩnh. Các bạn thu thập đủ một cục data rồi mới xử lý. Ngược lại, Stream Processing tiếp cận dữ liệu dưới dạng luồng liên tục, vô hạn, không có điểm kết thúc.
+- **Về bản chất dữ liệu:** Batch Processing giả định dữ liệu là hữu hạn và tĩnh. Ta thu thập đủ data rồi mới xử lý. Ngược lại, Stream Processing tiếp cận dữ liệu dưới dạng luồng liên tục, vô hạn, không có điểm kết thúc.
 - **Về độ trễ:** Batch chấp nhận độ trễ tính bằng giờ hoặc ngày, thường dùng cho các tác vụ chạy ngầm ban đêm. Trong khi đó, Stream ép buộc độ trễ phải ở mức cực thấp, tính bằng mili-giây.
 - **Về khả năng ứng dụng:** Batch phù hợp để làm báo cáo tổng hợp cuối tháng, còn Stream là bài toán sống còn cho các tính năng thời gian thực như cảnh báo gian lận thẻ tín dụng hay gợi ý sản phẩm tức thì.
 
@@ -33,7 +25,7 @@
 
 # Kiến trúc Spaghetti vs Event Backbone
 
-**1. Mở đầu (Nhận diện "Căn bệnh" của Microservices):** "Sau khi xác định được mô hình Stream Processing, câu hỏi đặt ra là: Các microservices sẽ giao tiếp với nhau như thế nào để truyền dòng dữ liệu đó? Kính mời Thầy và hội đồng nhìn vào sơ đồ bên trái: Mô hình giao tiếp Point-to-Point, hay trong giới kỹ sư phần mềm còn gọi vui là 'Kiến trúc Spaghetti'."
+**1. Mở đầu (Nhận diện "Căn bệnh" của Microservices):** "Sau khi xác định được mô hình Stream Processing, câu hỏi đặt ra là: Các microservices sẽ giao tiếp với nhau như thế nào để truyền dòng dữ liệu đó?."
 
 **2. Đi vào trọng tâm (Bắt lỗi mô hình Spaghetti):**
 
@@ -42,14 +34,14 @@
 - **Thứ nhất là Coupling cao (Phụ thuộc chặt chẽ):** Các service bị trói buộc với nhau. Service A muốn gửi data cho Service B thì phải biết chính xác địa chỉ IP, Port và trạng thái mạng của B. Cứ thêm một service mới, lập trình viên lại phải sửa code của các service cũ. Độ phức tạp mạng lưới sẽ bùng nổ
 - **Thứ hai là Sụp đổ dây chuyền:** vd Service E là bên nhận bị quá tải và phản hồi chậm. Các request đồng bộ từ Service A sẽ bị treo, làm cạn kiệt Thread pool và RAM của A. Kéo theo đó, toàn bộ các service đang gọi vào A cũng sẽ chết ngợp. Một mắt xích đứt gãy làm sụp đổ toàn bộ hệ thống."
 
-**3. Đưa ra giải pháp (Trục sự kiện tập trung - Event Backbone):** "Để đập bỏ mớ bòng bong đó, kiến trúc **Trục sự kiện tập trung (Event Backbone)** với Apache Kafka ở lõi đã ra đời (sơ đồ bên phải).
+\*_3. Đưa ra giải pháp (Trục sự kiện tập trung - Event Backbone):_
 
 - Kafka đứng ra làm trung gian, mang lại sự **Phân tách hoàn toàn (Decoupling)** giữa bên phát (Producer) và bên nhận (Consumer). Producer cứ việc ném dữ liệu vào Kafka rồi đi làm việc khác, không cần quan tâm ai sẽ đọc nó hay Consumer sống hay chết.
 - Lợi ích mang lại là khả năng **Mở rộng linh hoạt**. Khi công ty muốn gắn thêm một hệ thống Analytics (phân tích dữ liệu), chúng ta chỉ việc cho nó 'cắm' vào Kafka để đọc luồng sự kiện, hoàn toàn không chạm một dòng code nào vào hệ thống đang vận hành.
 
 # Apache Kafka là gì?
 
-**1. Mở đầu (Đập tan lầm tưởng):** nhìn vào sơ đồ trước thì nhiều người tưởng Kafka chỉ là một công cụ Message Queue (hàng chờ thông điệp) tương tự như RabbitMQ hay ActiveMQ. Kafka là một **Nền tảng Event Streaming Phân tán** (Distributed Event Streaming Platform)."
+**1. ** nhìn vào sơ đồ trước thì nhiều người tưởng Kafka chỉ là một công cụ Message Queue (hàng chờ thông điệp). Kafka là một **Nền tảng Event Streaming Phân tán** (Distributed Event Streaming Platform)."
 
 - **Thứ nhất là Publish / Subscribe:** Khả năng phát hành và đăng ký dòng sự kiện bất đồng bộ với băng thông (throughput) cực lớn và độ trễ cực thấp.
 - **Thứ hai là Persistent Storage :** Các Message Queue truyền thống hoạt động như một trạm trung chuyển tạm thời, tin nhắn đọc xong là xóa vĩnh viễn khỏi RAM. Ngược lại, Kafka **lưu trữ sự kiện bền vững trực tiếp xuống ổ cứng** của cụm server phân tán, mang lại độ chịu lỗi (fault tolerance) tuyệt đối.
