@@ -1,17 +1,17 @@
 # Kỷ nguyên Dữ liệu Dòng (Streaming Data)
 
-Kính chào Thầy và các bạn. Để bắt đầu, chúng ta hãy nhìn vào thực tế của các hệ thống phần mềm hiện đại: Chúng ta đã chính thức bước vào 'Kỷ nguyên Dữ liệu Dòng' hay còn gọi là Streaming Data. Trong kỷ nguyên này, các kiến trúc lưu trữ cũ đang bị đánh gục bởi 4 thách thức cốt lõi trên màn hình."
+hãy nhìn vào thực tế của các hệ thống phần mềm hiện đại: Chúng ta đã chính thức bước vào 'Kỷ nguyên Dữ liệu Dòng' hay còn gọi là Streaming Data. Trong kỷ nguyên này, các kiến trúc lưu trữ cũ đang bị đánh gục bởi 4 thách thức cốt lõi trên màn hình."
 
 **2. Đi vào trọng tâm (Phân tích 4 keywords trên slide):**
 
 - **Về Vận tốc và Nguồn phát:** "Thứ nhất, hệ thống hiện tại phải đối mặt với **vận tốc cực cao**, nơi dữ liệu phát sinh liên tục không dừng ở mọi mili-giây. Luồng dữ liệu khổng lồ này không chỉ đến từ một nguồn mà có **nguồn phát rất đa dạng**: từ thao tác click chuột trên Web, Mobile, hàng triệu thiết bị cảm biến IoT, cho đến Logs hệ thống và hàng nghìn tiến trình Microservices đan chéo nhau."
-- **Về Giá trị và Thời gian :** "thách thức sống còn nhất nằm ở **sự suy giảm giá trị**. Trong Streaming Data, giá trị thông tin giảm mạnh theo thời gian tính từ thời điểm sự kiện phát sinh. Ví dụ: một giao dịch quẹt thẻ nghi ngờ gian lận, hoặc một cuốc xe công nghệ cần định giá. Nếu chúng ta phát hiện và tính toán sau 1 giờ thì thông tin đó không còn ý nghĩa kinh doanh. Điều này ép buộc các hệ thống ngày nay phải có năng lực **xử lý tức thì**, bắt buộc phản hồi thời gian thực."
+- **Về Giá trị và Thời gian :** "thách thức sống còn nhất nằm ở **sự suy giảm giá trị**. Ví dụ: một giao dịch quẹt thẻ nghi ngờ gian lận, hoặc một cuốc xe công nghệ cần định giá. Nếu chúng ta phát hiện và tính toán sau 1 giờ thì thông tin đó không còn ý nghĩa kinh doanh. Điều này ép buộc các hệ thống ngày nay phải có năng lực **xử lý tức thì**, bắt buộc phản hồi thời gian thực."
 
 **💡 Mẹo phản biện cho bạn:** Nếu hội đồng hỏi _"Tại sao lại có IoT và Microservices ở đây?"_, hãy trả lời thẳng thắn: \_"Dạ thưa thầy, kiến trúc Monolithic (nguyên khối) ngày xưa chỉ có 1 cục server giao tiếp với 1 database. Hiện nay, khi microservices bùng nổ, hàng chục service nhỏ gọi nhau liên tục sinh ra lượng event khổng lồ. Cộng thêm dữ liệu telemetry (đo lường) từ các thiết bị IoT bắn về mỗi giây, hệ thống Message Queue truyền thống như RabbitMQ đã không thể chịu nổi tải. Đó là bối cảnh ép buộc Apache Kafka phải ra đời."
 
 # Sự dịch chuyển Mô hình Xử lý
 
-\*\*1. "Để giải quyết áp lực từ lượng dữ liệu mà chúng ta vừa phân tích, tư duy thiết kế phần mềm buộc phải có sự dịch chuyển căn bản. Đó là sự chuyển đổi từ mô hình Batch Processing (Xử lý theo lô) sang Stream Processing (Xử lý dòng)."
+\*\*1. "Để giải quyết áp lực từ lượng dữ liệu mà chúng ta vừa phân tích, tư duy thiết kế phần mềm buộc phải có sự dịch chuyển căn bản. Đó là sự chuyển đổi từ mô hình Xử lý theo lô sang Stream Processing"
 
 **2. Đi vào trọng tâm (So sánh trực diện 4 tiêu chí):**
 
@@ -20,8 +20,6 @@ Kính chào Thầy và các bạn. Để bắt đầu, chúng ta hãy nhìn vào
 - **Về bản chất dữ liệu:** Batch Processing giả định dữ liệu là hữu hạn và tĩnh. Ta thu thập đủ data rồi mới xử lý. Ngược lại, Stream Processing tiếp cận dữ liệu dưới dạng luồng liên tục, vô hạn, không có điểm kết thúc.
 - **Về độ trễ:** Batch chấp nhận độ trễ tính bằng giờ hoặc ngày, thường dùng cho các tác vụ chạy ngầm ban đêm. Trong khi đó, Stream ép buộc độ trễ phải ở mức cực thấp, tính bằng mili-giây.
 - **Về khả năng ứng dụng:** Batch phù hợp để làm báo cáo tổng hợp cuối tháng, còn Stream là bài toán sống còn cho các tính năng thời gian thực như cảnh báo gian lận thẻ tín dụng hay gợi ý sản phẩm tức thì.
-
-**3. Đào sâu chuyên môn (Nhấn mạnh "Nỗi đau" khi vận hành):** "Tuy nhiên, thưa Thầy và hội đồng, điểm khác biệt mang tính 'cứu mạng' nhất đối với các kỹ sư vận hành nằm ở **cơ chế xử lý lỗi**. Đối với Batch, nếu một tiến trình xử lý mất 5 tiếng đồng hồ mà bị lỗi ở phút cuối cùng, hệ thống buộc phải hủy bỏ và **chạy lại toàn bộ lô từ đầu**, gây lãng phí tài nguyên CPU và RAM khủng khiếp. Nhưng với Stream, nhờ quản lý trạng thái, khi có sự cố, hệ thống chỉ cần **phục hồi từ vị trí con trỏ (Offset) bị gián đoạn** và xử lý tiếp. Đây là bước nhảy vọt về khả năng chịu lỗi (Fault Tolerance)."
 
 # Kiến trúc Spaghetti vs Event Backbone
 
@@ -48,7 +46,7 @@ Kính chào Thầy và các bạn. Để bắt đầu, chúng ta hãy nhìn vào
 - **Thứ ba là Stream Processing:** Kafka không chỉ lưu và chuyển, mà nó còn cung cấp sẵn thư viện (như Kafka Streams) để xử lý dữ liệu động trực tiếp theo thời gian thực.
 - **Cuối cùng là Ecosystem Integration:** Kafka cho phép tự động đồng bộ dòng sự kiện với hàng trăm hệ thống cơ sở dữ liệu và Data Lake trong hệ sinh thái Big Data mà không cần viết mã kết nối thủ công (thông qua Kafka Connect)."
 
-**3. Đào sâu chuyên môn (Chốt hạ bản chất):** "Tóm lại, nếu phải dùng một hình ảnh để mô tả, Kafka không phải là một 'hàng chờ' (Queue), mà bản chất cốt lõi của nó là một cuốn sổ nhật ký **Distributed Commit Log**. Mọi sự kiện sinh ra đều được ghi nối tiếp vào cuối cuốn sổ này theo đúng thứ tự thời gian phát sinh và mang tính chất bất biến (immutable)."
+"Tóm lại, nếu phải dùng một hình ảnh để mô tả, Kafka không phải là một 'hàng chờ' (Queue), mà bản chất cốt lõi của nó là một cuốn sổ nhật ký **Distributed Commit Log**. Mọi sự kiện sinh ra đều được ghi nối tiếp vào cuối cuốn sổ này theo đúng thứ tự thời gian phát sinh."
 
 # Kiến trúc Tổng quan
 
